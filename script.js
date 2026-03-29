@@ -77,14 +77,15 @@ const REGISTROS_FIXOS = [
         DATA_INSCRICAO_CPF: "10/10/1997 (fictício)",
         ESTRANGEIRO: "Não",
         PROFISSAO: "Motorista de aplicativo",
+        INVESTIGACOES: "Nenhum registro",
         RESIDENTE_EXTERIOR: "Não",
         SOCIO_EMPRESA: "12.345.678/0001-90",
-        LOGRADOURO: "Kitnet 12 - Cidade Cenográfica",
+        LOGRADOURO: "",
         NUMERO: "",
-        COMPLEMENTO: "GRUPO B",
-        BAIRRO: "Setor Central",
-        CEP: "70000-998",
-        ENDERECO_2: "Kitnet 03 - Cidade Cenográfica - Brasília/DF - CEP 70000-998 (GRUPO C)",
+        COMPLEMENTO: "",
+        BAIRRO: "",
+        CEP: "",
+        ENDERECO_2: "",
         TELEFONE_1: "(61) 99887-7441",
         TELEFONE_1_TIPO: "Celular",
         RG_NUMERO: "88.219.944-4",
@@ -102,12 +103,7 @@ const REGISTROS_FIXOS = [
         VEICULO_1_COR: "Preto",
         VEICULO_1_RENAVAM_FICTICIO: "98765432100",
         VEICULO_1_TIPO_PESSOA: "detentor; proprietário",
-        VOOS: [
-            { localizador: "PTA541", cia: "AZUL", dataDecolagem: "2025-08-11", horaDecolagem: "06:10:00", aeroportoPartida: "BSB", dataAterrissagem: "2025-08-11", horaAterrissagem: "08:30:00", aeroportoChegada: "CNF", bagagem: "10 kg" },
-            { localizador: "PTA541", cia: "AZUL", dataDecolagem: "2025-08-12", horaDecolagem: "20:10:00", aeroportoPartida: "CNF", dataAterrissagem: "2025-08-12", horaAterrissagem: "22:20:00", aeroportoChegada: "BSB", bagagem: "Não" },
-            { localizador: "PPX102", cia: "GOL", dataDecolagem: "2025-09-20", horaDecolagem: "15:45:00", aeroportoPartida: "BSB", dataAterrissagem: "2025-09-20", horaAterrissagem: "17:50:00", aeroportoChegada: "CGH", bagagem: "23 kg" },
-            { localizador: "PPX102", cia: "GOL", dataDecolagem: "2025-09-23", horaDecolagem: "11:40:00", aeroportoPartida: "CGH", dataAterrissagem: "2025-09-23", horaAterrissagem: "13:25:00", aeroportoChegada: "BSB", bagagem: "23 kg" }
-        ],
+        VOOS: [],
         BOLETINS: [
             {
                 ORGAO: "Policia Militar - Academia Nacional de Policia (DIREN/ANP)",
@@ -120,8 +116,8 @@ const REGISTROS_FIXOS = [
             }
         ],
         FOTO_URL: "fotos/hortensio-rosto.png",
-        BASE_FICTICIA: "Base Interna - Consulta Pessoa Fisica (Simulacao)",
-        BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Fisica (Simulacao)",
+        BASE_FICTICIA: "Base Interna - Consulta Pessoa Física (Simulação)",
+        BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Física (Simulação)",
         BASE_FICTICIA_VEICULO: "Base Interna - Consulta Veiculo (Simulacao)",
         ORIGEM_REGISTRO: "FIXO"
     },
@@ -148,6 +144,45 @@ const REGISTROS_FIXOS = [
         ORIGEM_REGISTRO: "FIXO"
     },
     {
+        NOME_COMPLETO: "Zé das Contas Contabilidade Ltda.",
+        NOME_FANTASIA: "Zé das Contas",
+        TAGS: "BDRECEITACNPJ_RECEITACNPJ",
+        CNPJ: "98.765.432/0001-55",
+        CPF_CNPJ: "98.765.432/0001-55",
+        DOCUMENTO: "98.765.432/0001-55",
+        MATRIZ_FILIAL: "MATRIZ",
+        PJ_RAZAO_SOCIAL: "Zé das Contas Contabilidade Ltda.",
+        ADMINISTRADOR_RESPONSAVEL: "José Alfredo Contes",
+        CPF_RESPONSAVEL: "088.991.224-33",
+        RG_RESPONSAVEL: "11223344-5 SSP/DF",
+        LOGRADOURO: "Kitnet 06 – Cidade Cenográfica – Brasília/DF – CEP 70000-998 (GRUPO A)",
+        NUMERO: "",
+        COMPLEMENTO: "",
+        CIDADE: "",
+        UF: "",
+        CEP: "",
+        ENDERECO_2: "Kitnet 10 – Cidade Cenográfica – Brasília/DF – CEP 70000-998 (GRUPO B)",
+        TELEFONE_1: "(61) 3225-7744",
+        EMAIL_1: "atendimento@zedascontascontabilidade.com.br",
+        SITUACAO_CADASTRAL: "ATIVA",
+        DATA_SITUACAO_CADASTRAL: "15/06/2019",
+        NATUREZA_JURIDICA: "206-2 - Sociedade Empresaria Limitada",
+        DATA_INICIO_ATIVIDADE: "15/06/2019",
+        PORTE_EMPRESA: "ME - Microempresa",
+        NIRE: "98765432100",
+        CAPITAL_SOCIAL: "R$ 80.000,00",
+        CNAE_PRINCIPAL: "6920-6/01 - Serviços de Contabilidade",
+        CNAE_SECUNDARIO_1: "7020-4/00 - Atividades de consultoria em gestão",
+        CNAE_SECUNDARIO_2: "8211-3/00 - Serviços combinados de escritório",
+        SOCIO_PJ: "-",
+        SOCIO_PF: "José Alfredo Contes - CPF 088.991.224-33",
+        SOCIO_EXT: "-",
+        BASE_FICTICIA: "BDRECEITACNPJ_RECEITACNPJ",
+        BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Juridica (Simulacao)",
+        BASE_FICTICIA_VEICULO: "",
+        ORIGEM_REGISTRO: "FIXO"
+    },
+    {
         NOME_COMPLETO: "Pateta Transportes",
         NOME_FANTASIA: "Pateta Transportes",
         TAGS: "BDRECEITACNPJ_RECEITACNPJ",
@@ -159,13 +194,13 @@ const REGISTROS_FIXOS = [
         ADMINISTRADOR_RESPONSAVEL: "Hortênsio Paulo Pateta da Silva",
         CPF_RESPONSAVEL: "611.229.884-12",
         RG_RESPONSAVEL: "8821994-4 SSP/DF",
-        LOGRADOURO: "Kitnet 01 - Cidade Cenografica",
+        LOGRADOURO: "Kitnet 01 - Cidade Cenográfica",
         NUMERO: "",
         COMPLEMENTO: "GRUPO A",
-        CIDADE: "Brasilia",
+        CIDADE: "Brasília",
         UF: "DF",
         CEP: "70000-998",
-        ENDERECO_2: "Kitnet 12 - Cidade Cenografica - Brasilia/DF - CEP 70000-998 (GRUPO B)",
+        ENDERECO_2: "Kitnet 12 – Cidade Cenográfica – Brasília/DF – CEP 70000-998 (GRUPO B)",
         TELEFONE_1: "(61) 3998-2214",
         EMAIL_1: "contato@patetatransportes.com.br",
         SITUACAO_CADASTRAL: "ATIVA",
@@ -196,15 +231,15 @@ const REGISTROS_FIXOS = [
         CPF_CNPJ: "28.914.557/0001-42",
         DOCUMENTO: "28.914.557/0001-42",
         MATRIZ_FILIAL: "MATRIZ",
-        PJ_RAZAO_SOCIAL: "LG Celulares Comercio e Servicos Ltda.",
-        ADMINISTRADOR_RESPONSAVEL: "Elias Genova Esteves",
+        PJ_RAZAO_SOCIAL: "LG Celulares Comércio e Serviços Ltda.",
+        ADMINISTRADOR_RESPONSAVEL: "Elias Gênova Esteves",
         CPF_RESPONSAVEL: "091.442.835-10",
-        RG_RESPONSAVEL: "55667788-9 SSP/AM (ficticio)",
+        RG_RESPONSAVEL: "55667788-9 SSP/AM (fictício)",
         LOGRADOURO: "Rua das Castanheiras",
         NUMERO: "210",
         COMPLEMENTO: "",
         BAIRRO: "Centro",
-        CIDADE: "Humaita",
+        CIDADE: "Humaitá",
         UF: "AM",
         CEP: "69800-450",
         TELEFONE_1: "(92) 3344-5566 (ficticio)",
@@ -244,6 +279,7 @@ const REGISTROS_FIXOS = [
         DATA_INSCRICAO_CPF: "22/04/2010",
         ESTRANGEIRO: "Não",
         PROFISSAO: "Entregador autônomo",
+        INVESTIGACOES: "Nenhum registro",
         RESIDENTE_EXTERIOR: "Não",
         SOCIO_EMPRESA: "-",
         LOGRADOURO: "Kitnet 05 - Cidade Cenográfica",
@@ -260,24 +296,9 @@ const REGISTROS_FIXOS = [
         CHAVE_PIX: "+380665297785",
         CHAVE_PIX_TIPO: "TELEFONE",
         CHAVE_PIX_STATUS: "ATIVO",
-        VOOS: [
-            { localizador: "JJS220", cia: "LATAM", dataDecolagem: "2025-07-02", horaDecolagem: "10:20:00", aeroportoPartida: "BSB", dataAterrissagem: "2025-07-02", horaAterrissagem: "12:50:00", aeroportoChegada: "GYN", bagagem: "10 kg" },
-            { localizador: "JJS220", cia: "LATAM", dataDecolagem: "2025-07-05", horaDecolagem: "18:10:00", aeroportoPartida: "GYN", dataAterrissagem: "2025-07-05", horaAterrissagem: "20:30:00", aeroportoChegada: "BSB", bagagem: "Não" }
-        ],
-        BOLETINS: [
-            {
-                ORGAO: "Policia Civil - 5a Delegacia",
-                CIDADE_UNIDADE: "Brasilia/DF",
-                DATA: "22/09/2025",
-                HORARIO: "09h10min",
-                LOCAL: "Setor Comercial Norte - Brasilia/DF",
-                NATUREZA: "Extravio de documento pessoal",
-                HISTORICO: "O comunicante informou o extravio de documento de identidade durante deslocamento entre o local de trabalho e residencia. Relata que percebeu a ausencia do documento ao chegar em casa e compareceu para registro administrativo do fato."
-            }
-        ],
         DATA_ATUALIZACAO: "23/03/2026",
-        BASE_FICTICIA: "Base Interna - Consulta Pessoa Fisica (Simulacao)",
-        BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Fisica (Simulacao)",
+        BASE_FICTICIA: "Base Interna - Consulta Pessoa Física (Simulação)",
+        BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Física (Simulação)",
         BASE_FICTICIA_VEICULO: "",
         ORIGEM_REGISTRO: "FIXO"
     },
@@ -296,6 +317,7 @@ const REGISTROS_FIXOS = [
         DATA_INSCRICAO_CPF: "11/09/2002",
         ESTRANGEIRO: "Não",
         PROFISSAO: "Contador",
+        INVESTIGACOES: "Nenhum registro",
         RESIDENTE_EXTERIOR: "Não",
         SOCIO_EMPRESA: "41.778.992/0001-55",
         LOGRADOURO: "Kitnet 06 - Cidade Cenográfica",
@@ -348,6 +370,7 @@ const REGISTROS_FIXOS = [
         DATA_INSCRICAO_CPF: "19/02/2009",
         ESTRANGEIRO: "Não",
         PROFISSAO: "Comerciante",
+        INVESTIGACOES: "Nenhum registro",
         RESIDENTE_EXTERIOR: "Não",
         SOCIO_EMPRESA: "28.914.557/0001-42",
         LOGRADOURO: "Rua Rio Madeira",
@@ -371,11 +394,11 @@ const REGISTROS_FIXOS = [
             { localizador: "XO40RJ", cia: "GOL", dataDecolagem: "2025-10-17", horaDecolagem: "19:30:00", aeroportoPartida: "MAO", dataAterrissagem: "2025-10-17", horaAterrissagem: "21:30:00", aeroportoChegada: "BSB", bagagem: "25 kg" },
             { localizador: "XO40RJ", cia: "GOL", dataDecolagem: "2025-10-19", horaDecolagem: "17:30:00", aeroportoPartida: "BSB", dataAterrissagem: "2025-10-19", horaAterrissagem: "20:30:00", aeroportoChegada: "MAO", bagagem: "Não" },
             { localizador: "UOGPJ7", cia: "GOL", dataDecolagem: "2025-11-25", horaDecolagem: "07:45:00", aeroportoPartida: "MAO", dataAterrissagem: "2025-11-25", horaAterrissagem: "09:45:00", aeroportoChegada: "BSB", bagagem: "25 kg" },
-            { localizador: "UOGPJ7", cia: "GOL", dataDecolagem: "2025-11-25", horaDecolagem: "16:30:00", aeroportoPartida: "BSB", dataAterrissagem: "2025-11-25", horaAterrissagem: "19:30:00", aeroportoChegada: "MAO", bagagem: "Não" }
+            { localizador: "UOGPJ7", cia: "GOL", dataDecolagem: "2025-11-25", horaDecolagem: "16:30:00", aeroportoPartida: "BSB", dataAterrissagem: "2025-11-25", horaAterrissagem: "19:30:00", aeroportoChegada: "MAO", bagagem: "" }
         ],
         DATA_ATUALIZACAO: "23/03/2026",
-        BASE_FICTICIA: "Base Interna - Consulta Pessoa Fisica (Simulacao)",
-        BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Fisica (Simulacao)",
+        BASE_FICTICIA: "Base Interna - Consulta Pessoa Física (Simulação)",
+        BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Física (Simulação)",
         BASE_FICTICIA_VEICULO: "",
         ORIGEM_REGISTRO: "FIXO"
     },
@@ -661,29 +684,63 @@ function aplicarRegistrosManuaisNaBase() {
     dados = dados.concat(registrosManuais);
 }
 
+function registroTemChaveDuplicada(registroFixo, registroBase) {
+    const cpfFixo = normalizarCPF(obterCPF(registroFixo));
+    const cpfBase = normalizarCPF(obterCPF(registroBase));
+    if (cpfFixo && cpfBase && cpfFixo === cpfBase) {
+        return true;
+    }
+
+    const placaFixo1 = normalizarPlaca(registroFixo.VEICULO_1_PLACA);
+    const placaFixo2 = normalizarPlaca(registroFixo.VEICULO_2_PLACA);
+    const placaBase1 = normalizarPlaca(registroBase.VEICULO_1_PLACA);
+    const placaBase2 = normalizarPlaca(registroBase.VEICULO_2_PLACA);
+
+    if (
+        (placaFixo1 && (placaFixo1 === placaBase1 || placaFixo1 === placaBase2)) ||
+        (placaFixo2 && (placaFixo2 === placaBase1 || placaFixo2 === placaBase2))
+    ) {
+        return true;
+    }
+
+    return false;
+}
+
+function mesclarRegistroFixoNoBase(registroBase, registroFixo) {
+    const chaves = new Set([...Object.keys(registroBase), ...Object.keys(registroFixo)]);
+
+    chaves.forEach(chave => {
+        const valorBase = registroBase[chave];
+        const valorFixo = registroFixo[chave];
+
+        if ((valorBase === undefined || valorBase === "") && valorFixo !== undefined && valorFixo !== "") {
+            if (Array.isArray(valorFixo)) {
+                registroBase[chave] = JSON.parse(JSON.stringify(valorFixo));
+            } else if (typeof valorFixo === "object" && valorFixo !== null) {
+                registroBase[chave] = { ...valorFixo };
+            } else {
+                registroBase[chave] = valorFixo;
+            }
+        }
+    });
+}
+
 function aplicarRegistrosFixosNaBase() {
     if (!Array.isArray(REGISTROS_FIXOS) || REGISTROS_FIXOS.length === 0) {
         return;
     }
 
     REGISTROS_FIXOS.forEach(registroFixo => {
-        const cpfNovo = normalizarCPF(registroFixo.CPF_FICTICIO);
-        const placaNova = normalizarPlaca(registroFixo.VEICULO_1_PLACA);
+        const registroExistente = dados.find(registro => registroTemChaveDuplicada(registroFixo, registro));
 
-        const jaExiste = dados.some(registro => {
-            const cpfExistente = normalizarCPF(obterCPF(registro));
-            const placa1Existente = normalizarPlaca(registro.VEICULO_1_PLACA);
-            const placa2Existente = normalizarPlaca(registro.VEICULO_2_PLACA);
-
-            const cpfDuplicado = cpfNovo && cpfExistente && cpfNovo === cpfExistente;
-            const placaDuplicada = placaNova && (placaNova === placa1Existente || placaNova === placa2Existente);
-
-            return cpfDuplicado || placaDuplicada;
-        });
-
-        if (!jaExiste) {
-            dados.push(registroFixo);
+        if (registroExistente) {
+            // Se o registro ja existe na planilha, mantemos os dados da planilha e apenas
+            // complementamos campos ausentes com as informações fixas.
+            mesclarRegistroFixoNoBase(registroExistente, registroFixo);
+            return;
         }
+
+        dados.push(registroFixo);
     });
 }
 
@@ -1122,13 +1179,23 @@ function obterCPF(pessoa) {
     ];
 
     for (const campo of candidatos) {
-        if (pessoa[campo] !== undefined && pessoa[campo] !== null && String(pessoa[campo]).trim() !== "") {
-            return pessoa[campo];
+        const valor = pessoa[campo];
+        const texto = String(valor || "").trim();
+        if (texto !== "" && texto !== "-" && texto.toLowerCase() !== "n/a" && texto.toLowerCase() !== "nao") {
+            return valor;
         }
     }
 
     const chaveCpf = Object.keys(pessoa).find(campo => /cpf/i.test(campo));
-    return chaveCpf ? pessoa[chaveCpf] : "";
+    if (chaveCpf) {
+        const valor = pessoa[chaveCpf];
+        const texto = String(valor || "").trim();
+        if (texto !== "" && texto !== "-" && texto.toLowerCase() !== "n/a" && texto.toLowerCase() !== "nao") {
+            return valor;
+        }
+    }
+
+    return "";
 }
 
 function obterNomePessoa(pessoa) {
@@ -1314,13 +1381,16 @@ function montarCardConsultaCpf(indexGlobal, nome, tipoArea, linhas, tipoDetalhe 
 }
 
 function montarLinhasPessoaisResumo(pessoa) {
+    const investigacao = pessoa.INVESTIGACOES ? pessoa.INVESTIGACOES : "Nenhum caso";
+    const investigacaoHtml = pessoa.INVESTIGACOES ? `<span>${destacarTexto(investigacao)}</span>` : `<a href="#" style="color:#1f5f8f; text-decoration:underline;">${destacarTexto(investigacao)}</a>`;
+
     return [
         `<strong>CPF:</strong> ${destacarTexto(obterCPF(pessoa) || "-")}`,
         `<strong>Data de Nascimento:</strong> ${destacarTexto(pessoa.DATA_NASCIMENTO || "-")}`,
         `<strong>Genitor 1:</strong> ${destacarTexto(pessoa.NOME_MAE || "-")}`,
         `<strong>Genitor 2:</strong> ${destacarTexto(pessoa.NOME_PAI || "-")}`,
         `<strong>Naturalidade:</strong> ${destacarTexto(pessoa.NATURALIDADE || "-")}`,
-        `<strong>Investigação:</strong> <a href="#" style="color:#1f5f8f; text-decoration:underline;">Nenhum caso</a>`
+        `<strong>Investigação:</strong> ${investigacaoHtml}`
     ];
 }
 
@@ -1402,6 +1472,61 @@ function atualizarResumoResultados(total) {
     resumoEl.textContent = `Resultados encontrados: ${total}`;
 }
 
+function atualizarDebugInfo(mensagem) {
+    const debugEl = document.getElementById("debug-info");
+    if (!debugEl) {
+        return;
+    }
+
+    debugEl.textContent = mensagem;
+}
+
+function mapRegistroCsvParaBase(registro) {
+    const mapeamento = {
+        Nome: "NOME_COMPLETO",
+        CPF: "CPF_FICTICIO",
+        "Data de Nascimento": "DATA_NASCIMENTO",
+        "Data de Nascimento": "DATA_NASCIMENTO",
+        "Data_Nascimento": "DATA_NASCIMENTO",
+        "Nome completo": "NOME_COMPLETO",
+        "CPF FICTICIO": "CPF_FICTICIO"
+    };
+
+    const resultado = {};
+    Object.keys(registro).forEach(chave => {
+        const valor = registro[chave];
+        const nomeAlvo = mapeamento[chave] || chave.replace(/\s+/g, "_").toUpperCase();
+        resultado[nomeAlvo] = valor;
+    });
+    return resultado;
+}
+
+function carregarRegistrosCsv(texto) {
+    const linhas = texto.trim().replace(/\r/g, "").split("\n");
+    if (linhas.length === 0) {
+        return [];
+    }
+
+    const header = linhas[0].split(/,(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)/).map(h => h.trim().replace(/^\"|\"$/g, ""));
+    const registros = [];
+
+    for (let i = 1; i < linhas.length; i += 1) {
+        const linha = linhas[i].trim();
+        if (!linha) {
+            continue;
+        }
+
+        const valores = linha.split(/,(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)/).map(v => v.trim().replace(/^\"|\"$/g, ""));
+        const registro = {};
+        header.forEach((coluna, idx) => {
+            registro[coluna] = valores[idx] !== undefined ? valores[idx] : "";
+        });
+        registros.push(mapRegistroCsvParaBase(registro));
+    }
+
+    return registros;
+}
+
 async function carregarBase() {
     const resultadoEl = document.getElementById("resultado");
 
@@ -1423,25 +1548,39 @@ async function carregarBase() {
         return;
     }
 
-    if (typeof XLSX === "undefined") {
-        carregandoBase = false;
-        erroCarregamentoBase = "Biblioteca XLSX indisponivel. Verifique sua conexao com a internet.";
-        if (resultadoEl) {
-            resultadoEl.innerHTML = `<div class="resultado">${erroCarregamentoBase}</div>`;
-        }
-        return;
-    }
+    const xlsxDisponivel = typeof XLSX !== "undefined";
 
     try {
-        const res = await fetch("base_ficticia_apex_nexo.xlsx", { cache: "no-store" });
-        if (!res.ok) {
-            throw new Error("Falha ao ler arquivo da base.");
+        let fonteCarregada = null;
+        let dataCsv = [];
+
+        const csvRes = await fetch("dados.csv", { cache: "no-store" });
+        if (csvRes.ok) {
+            const texto = await csvRes.text();
+            dataCsv = carregarRegistrosCsv(texto);
+            if (Array.isArray(dataCsv) && dataCsv.length > 0) {
+                dados = dataCsv;
+                fonteCarregada = "CSV";
+            }
         }
 
-        const buffer = await res.arrayBuffer();
-        const workbook = XLSX.read(buffer, { type: "array" });
-        const sheet = workbook.Sheets[workbook.SheetNames[0]];
-        dados = XLSX.utils.sheet_to_json(sheet);
+        if ((!Array.isArray(dados) || dados.length === 0) && xlsxDisponivel) {
+            const res = await fetch("base_ficticia_apex_nexo.xlsx", { cache: "no-store" });
+            if (!res.ok) {
+                throw new Error("Falha ao ler arquivo da base.");
+            }
+
+            const buffer = await res.arrayBuffer();
+            const workbook = XLSX.read(buffer, { type: "array" });
+            const sheet = workbook.Sheets[workbook.SheetNames[0]];
+            dados = XLSX.utils.sheet_to_json(sheet);
+            fonteCarregada = "XLSX";
+        }
+
+        if ((!Array.isArray(dados) || dados.length === 0) && !fonteCarregada) {
+            throw new Error("Nenhuma base de dados foi encontrada.");
+        }
+
         registrosManuais = carregarRegistrosManuaisSalvos();
         aplicarRegistrosManuaisNaBase();
         aplicarRegistrosFixosNaBase();
@@ -1459,6 +1598,7 @@ async function carregarBase() {
             resultadoEl.innerHTML = "";
         }
         atualizarResumoResultados(0);
+        atualizarDebugInfo(`Base carregada (${fonteCarregada}): ${dados.length} registros | CPF do primeiro registro: ${obterCPF(dados[0]) || 'não encontrado'}`);
 
         console.log("Base carregada:", dados.length, "registros");
         console.log("Colunas encontradas:", Object.keys(dados[0] || {}));
@@ -1489,6 +1629,7 @@ async function carregarBase() {
                     resultadoEl.innerHTML = `<div class="resultado">Base principal indisponivel. Carregados ${dados.length} registros fixos.</div>`;
                 }
                 atualizarResumoResultados(0);
+                atualizarDebugInfo(`Fallback fixo carregado: ${dados.length} registros | CPF do primeiro registro: ${obterCPF(dados[0]) || 'não encontrado'}`);
             } else {
                 baseCarregada = false;
                 erroCarregamentoBase = "Nao foi possivel carregar a base Excel.";
@@ -1535,8 +1676,17 @@ function pesquisar() {
     resultadoEl.style.display = "block";
 
     if (carregandoBase) {
-        resultadoEl.innerHTML = `<div class="resultado">A base ainda esta carregando. Aguarde alguns segundos e tente novamente.</div>`;
+        resultadoEl.innerHTML = `<div class="resultado">A base ainda esta carregando. Aguarde alguns segundos enquanto a pesquisa é concluída.</div>`;
         atualizarResumoResultados(0);
+
+        if (!window.pesquisaAguardandoBase) {
+            window.pesquisaAguardandoBase = true;
+            setTimeout(() => {
+                window.pesquisaAguardandoBase = false;
+                pesquisar();
+            }, 400);
+        }
+
         return;
     }
 
@@ -1558,12 +1708,16 @@ function pesquisar() {
     let modoSelecionado = document.getElementById("tipoBusca")?.value || "auto";
     const forcarLocal = /^\s*(local|endereco)\s*:/i.test(termoOriginal);
     const forcarPix = /^\s*(consulta\s*simba-?pix|pix)\s*:/i.test(termoOriginal);
+    const forcarPlaca = /^\s*(placa)\s*:/i.test(termoOriginal);
 
     if (forcarLocal) {
         termoOriginal = termoOriginal.replace(/^\s*(local|endereco)\s*:/i, "").trim();
     }
     if (forcarPix) {
         termoOriginal = termoOriginal.replace(/^\s*(consulta\s*simba-?pix|pix)\s*:/i, "").trim();
+    }
+    if (forcarPlaca) {
+        termoOriginal = termoOriginal.replace(/^\s*(placa)\s*:/i, "").trim();
     }
 
     atualizarDestaqueBusca(termoOriginal);
@@ -1585,7 +1739,7 @@ function pesquisar() {
         }
 
         if (contemNumeros && !contemLetras) {
-            tipoBusca = "cpf";
+            tipoBusca = termoCPF.length === 14 ? "documento" : "cpf";
         } else if (contemLetras && contemNumeros) {
             tipoBusca = placaValida ? "placa" : "documento";
         }
@@ -1594,10 +1748,16 @@ function pesquisar() {
             tipoBusca = "local";
         }
 
+        if (forcarPlaca) {
+            tipoBusca = "placa";
+        }
+
         if (forcarPix) {
             tipoBusca = "pix";
         }
     }
+
+    atualizarDebugInfo(`Busca: "${termoOriginal}" | tipo: ${tipoBusca} | termoCPF: ${termoCPF || 'nenhum'} | termoPlaca: ${termoPlaca || 'nenhum'}`);
 
     if (termo.length < 2) {
         resultadoEl.innerHTML =
@@ -1649,6 +1809,10 @@ function pesquisar() {
                 (termoCPF.length > 0 && (cpfBusca.includes(termoCPF) || documentoBuscaNumerico.includes(termoCPF))) ||
                 (termoPlaca.length > 0 && (placa1Busca.includes(termoPlaca) || placa2Busca.includes(termoPlaca))) ||
                 (termoCPF.length > 0 && chavePixNumerica.includes(termoCPF));
+        }
+
+        if (!encontrou && tipoBusca === "placa" && termoPlaca.length > 0) {
+            encontrou = placa1Busca.includes(termoPlaca) || placa2Busca.includes(termoPlaca) || buscaGeral.includes(termoPlaca);
         }
 
         if (tipoBusca === "nome" && termo.length < 2) {
@@ -1927,25 +2091,79 @@ function obterVeiculosPessoa(pessoa, veiculo = null) {
     return veiculos;
 }
 
+function isPessoaJuridica(pessoa) {
+    const cnpj = normalizarCPF(pessoa.CNPJ || pessoa.DOCUMENTO || pessoa.CPF_CNPJ || "");
+    return Boolean(cnpj && cnpj.length === 14 && pessoa.CNPJ);
+}
+
 function gerarSecaoDadosPessoais(pessoa) {
     const dataAtualizacao = pessoa.DATA_ATUALIZACAO || pessoa.DATA_ATUALIZACAO_ORIGEM || "30/11/2025";
-    const rg = pessoa.RG_NUMERO
-        ? `${pessoa.RG_NUMERO}${pessoa.RG_ORGAO_EMISSOR ? ` - ${pessoa.RG_ORGAO_EMISSOR}` : ""}`
-        : "-";
     const enderecoPrincipal = [
         pessoa.LOGRADOURO,
         pessoa.NUMERO,
-        pessoa.COMPLEMENTO,
+        pessoa.COMPLEMENTO ? `(${pessoa.COMPLEMENTO})` : "",
+        pessoa.CIDADE,
+        pessoa.UF ? `/${pessoa.UF}` : "",
+        pessoa.CEP ? `CEP ${pessoa.CEP}` : ""
+    ].filter(parte => String(parte || "").trim() !== "").join(" - ");
+    const enderecoSecundario = String(pessoa.ENDERECO_2 || "").trim();
+    const tags = String(pessoa.TAGS || "").trim();
+
+    if (isPessoaJuridica(pessoa)) {
+        return montarSecaoDetalhe("Dados Jurídicos", `
+            <div class="detalhe-campo"><strong>Tags:</strong> ${tags || "-"}</div>
+            <div class="detalhe-campo"><strong>CNPJ:</strong> ${pessoa.CNPJ || pessoa.DOCUMENTO || "-"}</div>
+            <div class="detalhe-campo"><strong>Matriz/Filial:</strong> ${pessoa.MATRIZ_FILIAL || "-"}</div>
+            <div class="detalhe-campo"><strong>Empresa (Razão Social):</strong> ${pessoa.PJ_RAZAO_SOCIAL || pessoa.NOME_COMPLETO || "-"}</div>
+            <div class="detalhe-campo"><strong>Nome Fantasia:</strong> ${pessoa.NOME_FANTASIA || "-"}</div>
+            <div class="detalhe-campo"><strong>Administrador / Responsável:</strong> ${pessoa.ADMINISTRADOR_RESPONSAVEL || "-"}</div>
+            <div class="detalhe-campo"><strong>CPF do Responsável:</strong> ${pessoa.CPF_RESPONSAVEL || "-"}</div>
+            <div class="detalhe-campo"><strong>RG do Responsável:</strong> ${pessoa.RG_RESPONSAVEL || "-"}</div>
+            <div class="detalhe-campo"><strong>Endereço:</strong> ${enderecoPrincipal || "-"}</div>
+            <div class="detalhe-campo"><strong>Endereço 2:</strong> ${enderecoSecundario || "-"}</div>
+            <div class="detalhe-campo"><strong>Telefone:</strong> ${pessoa.TELEFONE_1 || "-"}</div>
+            <div class="detalhe-campo"><strong>Email:</strong> ${pessoa.EMAIL_1 || "-"}</div>
+            <div class="detalhe-campo"><strong>Situação Cadastral:</strong> ${pessoa.SITUACAO_CADASTRAL || "-"}</div>
+            <div class="detalhe-campo"><strong>Data da Situação Cadastral:</strong> ${pessoa.DATA_SITUACAO_CADASTRAL || "-"}</div>
+            <div class="detalhe-campo"><strong>Natureza Jurídica:</strong> ${pessoa.NATUREZA_JURIDICA || "-"}</div>
+            <div class="detalhe-campo"><strong>Data de Início da Atividade:</strong> ${pessoa.DATA_INICIO_ATIVIDADE || "-"}</div>
+            <div class="detalhe-campo"><strong>Porte:</strong> ${pessoa.PORTE_EMPRESA || "-"}</div>
+            <div class="detalhe-campo"><strong>NIRE:</strong> ${pessoa.NIRE || "-"}</div>
+            <div class="detalhe-campo"><strong>Capital Social:</strong> ${pessoa.CAPITAL_SOCIAL || "-"}</div>
+            <div class="detalhe-campo"><strong>Atividade Principal (CNAE):</strong> ${pessoa.CNAE_PRINCIPAL || "-"}</div>
+            <div class="detalhe-campo"><strong>Atividades Secundárias:</strong> ${[
+                pessoa.CNAE_SECUNDARIO_1,
+                pessoa.CNAE_SECUNDARIO_2,
+                pessoa.CNAE_SECUNDARIO_3
+            ].filter(item => String(item || "").trim() !== "").join("; ") || "-"}</div>
+            <div class="detalhe-campo"><strong>Quadro Societário:</strong></div>
+            <div class="detalhe-campo"><strong>• SÓCIO_PJ:</strong> ${pessoa.SOCIO_PJ || "-"}</div>
+            <div class="detalhe-campo"><strong>• SÓCIO_PF:</strong> ${pessoa.SOCIO_PF || "-"}</div>
+            <div class="detalhe-campo"><strong>• SÓCIO_EXT:</strong> ${pessoa.SOCIO_EXT || "-"}</div>
+            <div class="detalhe-campo"><strong>Data da Atualização:</strong> ${dataAtualizacao}</div>
+        `);
+    }
+
+    const rgPessoa = pessoa.RG_NUMERO
+        ? `${pessoa.RG_NUMERO}${pessoa.RG_ORGAO_EMISSOR ? ` - ${pessoa.RG_ORGAO_EMISSOR}` : ""}`
+        : "-";
+    const enderecoPrincipalPartesPessoa = [
+        pessoa.LOGRADOURO,
+        pessoa.NUMERO,
         pessoa.BAIRRO,
         (pessoa.CIDADE || pessoa.UF) ? `${pessoa.CIDADE || ""}/${pessoa.UF || ""}` : "",
         pessoa.CEP ? `CEP ${pessoa.CEP}` : ""
-    ].filter(parte => String(parte || "").trim() !== "").join(", ");
-    const enderecoSecundario = String(pessoa.ENDERECO_2 || "").trim();
+    ].filter(parte => String(parte || "").trim() !== "");
+    const complementoEnderecoPessoa = pessoa.COMPLEMENTO ? `(${String(pessoa.COMPLEMENTO).trim()})` : "";
+    const enderecoPrincipalPessoa = [...enderecoPrincipalPartesPessoa, complementoEnderecoPessoa]
+        .filter(parte => String(parte || "").trim() !== "")
+        .join(", ");
+    const enderecoSecundarioPessoa = String(pessoa.ENDERECO_2 || "").trim();
 
     return montarSecaoDetalhe("Dados Pessoais", `
         <div class="detalhe-campo"><strong>Nome:</strong> ${pessoa.NOME_COMPLETO || ""}</div>
         <div class="detalhe-campo"><strong>CPF:</strong> ${obterCPF(pessoa) || "-"}</div>
-        <div class="detalhe-campo"><strong>RG:</strong> ${rg}</div>
+        <div class="detalhe-campo"><strong>RG:</strong> ${rgPessoa}</div>
         <div class="detalhe-campo"><strong>Data de Nascimento:</strong> ${pessoa.DATA_NASCIMENTO || "-"}</div>
         <div class="detalhe-campo"><strong>Genitor 1:</strong> ${pessoa.NOME_MAE || "-"}</div>
         <div class="detalhe-campo"><strong>Genitor 2:</strong> ${pessoa.NOME_PAI || "-"}</div>
@@ -1953,8 +2171,8 @@ function gerarSecaoDadosPessoais(pessoa) {
         <div class="detalhe-campo"><strong>UF Naturalidade:</strong> ${pessoa.UF_NATURALIDADE || "-"}</div>
         <div class="detalhe-campo"><strong>Estado Civil:</strong> ${pessoa.ESTADO_CIVIL || "-"}</div>
         <div class="detalhe-campo"><strong>Profissão:</strong> ${pessoa.PROFISSAO || "-"}</div>
-        <div class="detalhe-campo"><strong>Endereço:</strong> ${enderecoPrincipal || "-"}</div>
-        <div class="detalhe-campo"><strong>Endereço 2:</strong> ${enderecoSecundario || "-"}</div>
+        <div class="detalhe-campo"><strong>Endereço:</strong> ${enderecoPrincipalPessoa || "-"}</div>
+        <div class="detalhe-campo"><strong>Endereço 2:</strong> ${enderecoSecundarioPessoa || "-"}</div>
         <div class="detalhe-campo"><strong>Data da Atualização:</strong> ${dataAtualizacao}</div>
     `);
 }
@@ -2129,8 +2347,13 @@ function abrirDetalhe(index, tipo = "pessoa", veiculo = null) {
             arma: "BANCO DE DADOS ARMAS"
         };
 
+        const investigacaoTexto = registroSelecionado.INVESTIGACOES || "Nenhum caso";
+        const investigacaoHtml = registroSelecionado.INVESTIGACOES
+            ? `<strong>Investigação:</strong> ${destacarTexto(investigacaoTexto)}`
+            : `<strong>Investigação:</strong> <a href="#" style="color:#1f5f8f; text-decoration:underline;">${destacarTexto(investigacaoTexto)}</a>`;
+
         document.getElementById("det-nome").textContent = mapaTitulos[tipo] || registroSelecionado.NOME_COMPLETO || "";
-        document.getElementById("det-investigacoes").innerHTML = `<strong>Investigação:</strong> <a href="#" style="color:#1f5f8f; text-decoration:underline;">Nenhum caso</a>`;
+        document.getElementById("det-investigacoes").innerHTML = investigacaoHtml;
         document.getElementById("det-origem").innerHTML = `<strong>Origem:</strong> ${mapaOrigens[tipo] || registroSelecionado.BASE_FICTICIA_PESSOA || registroSelecionado.BASE_FICTICIA || ""}`;
         gerarSecoes();
     }
