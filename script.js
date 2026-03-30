@@ -2143,6 +2143,9 @@ function gerarSecaoDadosPessoais(pessoa) {
             <div class="detalhe-campo"><strong>• SÓCIO_PJ:</strong> ${pessoa.SOCIO_PJ || "-"}</div>
             <div class="detalhe-campo"><strong>• SÓCIO_PF:</strong> ${pessoa.SOCIO_PF || "-"}</div>
             <div class="detalhe-campo"><strong>• SÓCIO_EXT:</strong> ${pessoa.SOCIO_EXT || "-"}</div>
+            ${pessoa.CONTADOR ? `<div class="detalhe-campo"><strong>Contador:</strong> ${pessoa.CONTADOR}</div>` : ""}
+            ${pessoa.CPF_CONTADOR ? `<div class="detalhe-campo"><strong>CPF do Contador:</strong> ${pessoa.CPF_CONTADOR}</div>` : ""}
+            ${pessoa.TELEFONE_CONTADOR ? `<div class="detalhe-campo"><strong>Telefone do Contador:</strong> ${pessoa.TELEFONE_CONTADOR}</div>` : ""}
             <div class="detalhe-campo"><strong>Data da Atualização:</strong> ${dataAtualizacao}</div>
         `);
     }
