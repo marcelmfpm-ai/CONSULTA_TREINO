@@ -43,8 +43,8 @@ const REGISTROS_FIXOS = [
             { localizador: "XTQM47", cia: "GOL", dataDecolagem: "2025-09-30", horaDecolagem: "17:00:00", aeroportoPartida: "MAO", dataAterrissagem: "2025-09-30", horaAterrissagem: "19:00:00", aeroportoChegada: "BSB", bagagem: "Não" },
             { localizador: "DFGG22", cia: "GOL", dataDecolagem: "2025-10-22", horaDecolagem: "22:45:00", aeroportoPartida: "BSB", dataAterrissagem: "2025-10-23", horaAterrissagem: "01:45:00", aeroportoChegada: "MAO", bagagem: "Não" },
             { localizador: "RPLV58", cia: "GOL", dataDecolagem: "2025-10-24", horaDecolagem: "07:45:00", aeroportoPartida: "MAO", dataAterrissagem: "2025-10-24", horaAterrissagem: "09:45:00", aeroportoChegada: "BSB", bagagem: "Não" },
-            { localizador: "HIJKK99", cia: "GOL", dataDecolagem: "2025-11-15", horaDecolagem: "19:30:00", aeroportoPartida: "BSB", dataAterrissagem: "2025-11-15", horaAterrissagem: "21:30:00", aeroportoChegada: "BSB", bagagem: "Não" },
-            { localizador: "WNBZ63", cia: "GOL", dataDecolagem: "2025-11-16", horaDecolagem: "17:30:00", aeroportoPartida: "MAO", dataAterrissagem: "2025-11-16", horaAterrissagem: "20:30:00", aeroportoChegada: "MAO", bagagem: "Não" }
+            { localizador: "HIJKK99", cia: "GOL", dataDecolagem: "2025-11-15", horaDecolagem: "19:30:00", aeroportoPartida: "BSB", dataAterrissagem: "2025-11-15", horaAterrissagem: "21:30:00", aeroportoChegada: "MAO", bagagem: "Não" },
+            { localizador: "WNBZ63", cia: "GOL", dataDecolagem: "2025-11-16", horaDecolagem: "17:30:00", aeroportoPartida: "MAO", dataAterrissagem: "2025-11-16", horaAterrissagem: "20:30:00", aeroportoChegada: "BSB", bagagem: "Não" }
         ],
         RG_NUMERO: "45.667.889-3",
         RG_ORGAO_EMISSOR: "SSP/SP",
