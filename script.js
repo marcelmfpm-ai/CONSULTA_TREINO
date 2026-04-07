@@ -303,7 +303,28 @@ const REGISTROS_FIXOS = [
         BASE_FICTICIA: "Base Interna - Consulta Pessoa Física (Simulação)",
         BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Física (Simulação)",
         BASE_FICTICIA_VEICULO: "",
-        ORIGEM_REGISTRO: "FIXO"
+        ORIGEM_REGISTRO: "FIXO",
+        ARMAS: [
+            {
+                especie: "Pistola",
+                numeroSINARM: "201400849888887",
+                registro: "0024578910",
+                marca: "Glock Gmbh Áustria",
+                modelo: "G17",
+                calibre: "9 Mm",
+                serie: "XZU376",
+                tipoAcabamento: "Outros",
+                capacidadeTiro: "17",
+                comprimentoCano: "-",
+                quantidadeCanos: "1",
+                tipoAlma: "Raiada",
+                quantidadeRaias: "6",
+                sentidoRaia: "Direita",
+                paisFabricacao: "Áustria",
+                tipoFuncionamento: "Semi Automatico",
+                ativo: "ATIVO"
+            }
+        ]
     },
     {
         NOME_COMPLETO: "José Alfredo Contes",
@@ -2301,24 +2322,37 @@ function gerarSecaoArmas(pessoa) {
     }
 
     return montarSecaoDetalhe("Armas", `
-        <table class="detalhe-tabela" style="font-size:24px;">
-            <thead>
-                <tr>
-                    <th style="font-size:24px;">Tipo</th><th></th>
-                    <th style="font-size:24px;">Ativo</th><th></th>
-                    <th style="font-size:24px;">Data de Aquisição</th><th></th>
-                </tr>
-            </thead>
-            <tbody>
-                ${armas.map(arma => `
-                    <tr>
-                        <td>${arma.tipo || "-"}</td><td></td>
-                        <td>${arma.ativo || "-"}</td><td></td>
-                        <td>${arma.dataAquisicao || "-"}</td><td></td>
-                    </tr>
-                `).join("")}
-            </tbody>
-        </table>
+        ${armas.map(arma => {
+            if (arma.especie || arma.numeroSINARM || arma.marca) {
+                return `
+                    <div class="detalhe-campo"><strong>ARMA: ${arma.serie || "-"}</strong></div>
+                    <div class="detalhe-campo"><strong>Espécie:</strong> ${arma.especie || "-"}</div>
+                    <div class="detalhe-campo"><strong>Número SINARM:</strong> ${arma.numeroSINARM || "-"}</div>
+                    <div class="detalhe-campo"><strong>Registro:</strong> ${arma.registro || "-"}</div>
+                    <div class="detalhe-campo"><strong>Marca:</strong> ${arma.marca || "-"}</div>
+                    <div class="detalhe-campo"><strong>Modelo:</strong> ${arma.modelo || "-"}</div>
+                    <div class="detalhe-campo"><strong>Calibre:</strong> ${arma.calibre || "-"}</div>
+                    <div class="detalhe-campo"><strong>Série:</strong> ${arma.serie || "-"}</div>
+                    <div class="detalhe-campo"><strong>Tipo de Acabamento:</strong> ${arma.tipoAcabamento || "-"}</div>
+                    <div class="detalhe-campo"><strong>Capacidade de Tiro:</strong> ${arma.capacidadeTiro || "-"}</div>
+                    <div class="detalhe-campo"><strong>Comprimento do Cano:</strong> ${arma.comprimentoCano || "-"}</div>
+                    <div class="detalhe-campo"><strong>Quantidade de Canos:</strong> ${arma.quantidadeCanos || "-"}</div>
+                    <div class="detalhe-campo"><strong>Tipo da Alma:</strong> ${arma.tipoAlma || "-"}</div>
+                    <div class="detalhe-campo"><strong>Quantidade de Raias:</strong> ${arma.quantidadeRaias || "-"}</div>
+                    <div class="detalhe-campo"><strong>Sentido da Raia:</strong> ${arma.sentidoRaia || "-"}</div>
+                    <div class="detalhe-campo"><strong>País de Fabricação:</strong> ${arma.paisFabricacao || "-"}</div>
+                    <div class="detalhe-campo"><strong>Tipo de Funcionamento:</strong> ${arma.tipoFuncionamento || "-"}</div>
+                    <div class="detalhe-campo"><strong>Situação:</strong> ${arma.ativo || "-"}</div>
+                    <hr style="border:none; border-top:1px solid #d6dde8; margin:14px 0;">
+                `;
+            }
+            return `
+                <div class="detalhe-campo"><strong>Tipo:</strong> ${arma.tipo || "-"}</div>
+                <div class="detalhe-campo"><strong>Situação:</strong> ${arma.ativo || "-"}</div>
+                <div class="detalhe-campo"><strong>Data de Aquisição:</strong> ${arma.dataAquisicao || "-"}</div>
+                <hr style="border:none; border-top:1px solid #d6dde8; margin:14px 0;">
+            `;
+        }).join("")}
     `);
 }
 
