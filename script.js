@@ -498,6 +498,52 @@ const REGISTROS_FIXOS = [
         BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Fisica (Simulacao)",
         BASE_FICTICIA_VEICULO: "Base Interna - Consulta Veiculo (Simulacao)",
         ORIGEM_REGISTRO: "FIXO"
+    },
+    {
+        NOME_COMPLETO: "Arnaldo Pereira da Mata",
+        CPF_FICTICIO: "123.456.789-00",
+        DATA_NASCIMENTO: "10/11/1982",
+        NOME_MAE: "Vaneza da Mata",
+        NATURALIDADE: "Maués",
+        UF_NATURALIDADE: "AM",
+        SITUACAO_CADASTRAL_CPF: "Regular",
+        ANO_OBITO: "-",
+        GENERO: "Masculino",
+        ESTRANGEIRO: "Não",
+        RESIDENTE_EXTERIOR: "Não",
+        SOCIO_EMPRESA: "98.765.432/0001-11",
+        BASE_FICTICIA: "Base Interna - Consulta Pessoa Fisica (Simulacao)",
+        BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Fisica (Simulacao)",
+        BASE_FICTICIA_VEICULO: "",
+        ORIGEM_REGISTRO: "FIXO"
+    },
+    {
+        NOME_COMPLETO: "SERRARIA MADEIREIRA SÃO JORGE LTDA",
+        NOME_FANTASIA: "SERRARIA MADEIREIRA SÃO JORGE LTDA",
+        TAGS: "BDRECEITACNPJ_RECEITACNPJ",
+        CNPJ: "98.765.432/0001-11",
+        CPF_CNPJ: "98.765.432/0001-11",
+        DOCUMENTO: "98.765.432/0001-11",
+        MATRIZ_FILIAL: "MATRIZ",
+        PJ_RAZAO_SOCIAL: "SERRARIA MADEIREIRA SÃO JORGE LTDA",
+        ADMINISTRADOR_RESPONSAVEL: "Arnaldo Pereira da Mata",
+        CPF_RESPONSAVEL: "123.456.789-00",
+        LOGRADOURO: "Estrada Vicinal do Guamá, km 10",
+        NUMERO: "",
+        COMPLEMENTO: "Zona Rural",
+        BAIRRO: "Zona Rural",
+        CIDADE: "Altamira",
+        UF: "PA",
+        CEP: "",
+        SITUACAO_CADASTRAL: "ATIVA",
+        CAPITAL_SOCIAL: "R$ 50.000,00",
+        SOCIO_PJ: "-",
+        SOCIO_PF: "Arnaldo Pereira da Mata - CPF 123.456.789-00",
+        SOCIO_EXT: "-",
+        BASE_FICTICIA: "BDRECEITACNPJ_RECEITACNPJ",
+        BASE_FICTICIA_PESSOA: "Base Interna - Consulta Pessoa Juridica (Simulacao)",
+        BASE_FICTICIA_VEICULO: "",
+        ORIGEM_REGISTRO: "FIXO"
     }
 ];
 const CAMPOS_MINIMOS_BASE = [
@@ -1433,7 +1479,8 @@ function montarPainelConsultaPorCpf(registros) {
         const quantidadeBoletins = Array.isArray(pessoa.BOLETINS) ? pessoa.BOLETINS.length : 0;
         const linhasPessoais = montarLinhasPessoaisResumo(pessoa);
 
-        html += montarCardConsultaCpf(indexGlobal, nome, "DADOS PESSOAIS", [
+        const tituloDados = ehPessoaJuridica(pessoa) ? "DADOS PESSOA JURÍDICA" : "DADOS PESSOAIS";
+        html += montarCardConsultaCpf(indexGlobal, nome, tituloDados, [
             ...linhasPessoais,
             `<span class="origem">Base consultada: ${destacarTexto(pessoa.BASE_FICTICIA_PESSOA || pessoa.BASE_FICTICIA || "")}</span>`
         ], "pessoa");
